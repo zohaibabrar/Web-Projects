@@ -1,0 +1,18 @@
+#ratings{
+    padding: 5%;
+    .row{
+        border-radius: 10px;
+        height: 30%;
+    }
+    .checked{
+        color: orange;
+    }
+    span{
+        padding-right: 2%;
+    }
+    #description{
+        color: rgb(73, 0, 73);
+        font-weight: bold;
+        padding-left: 5%;
+    }
+}

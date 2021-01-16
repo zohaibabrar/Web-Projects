@@ -1,0 +1,70 @@
+#summary h1 {
+  color: #490049;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#summary p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(119, 116, 116, 0.952);
+  font-size: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+  letter-spacing: 2px;
+}
+
+#ratings {
+  padding: 5%;
+}
+
+#ratings .row {
+  border-radius: 10px;
+  height: 30%;
+}
+
+#ratings .checked {
+  color: orange;
+}
+
+#ratings span {
+  padding-right: 2%;
+}
+
+#ratings #description {
+  color: #490049;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+#card {
+  height: 35vh;
+  background-color: #5c155c;
+  border-radius: 4%;
+}
+
+#card img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+#card #name {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#card #position {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c03f54;
+}
+
+#card #comment {
+  color: rgba(255, 255, 255, 0.692);
+  text-align: justify;
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */
