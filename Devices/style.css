@@ -1,0 +1,401 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    background: black;
+    opacity: 0.9;
+    overflow: hidden;
+    top: 0;
+    height: 12%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+li{   
+    float: left;
+    padding-top: 25px;
+}
+
+a{
+   padding: 50px;
+   width: 100px;
+   text-decoration: none;
+   font-size: 20px;
+   font-family: 'Acme', sans-serif;
+   color: white;
+}
+nav a:hover{
+    text-transform: uppercase;
+}
+nav a:active{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#home{
+    height: 700px;
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+.menu{
+    margin-top: 100px;
+}
+.banner{
+    padding-top: 25vh;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.banner h1{
+    font-family: 'Acme', sans-serif;
+    font-size: 70px;
+}
+.banner p{
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    border-top: 1px solid grey;
+    margin-left: 60vh;
+    margin-right: 60vh;
+}
+.menu img{
+    width: 210px;
+    height: auto;
+    float: left;
+    padding: 10px 0px 0px 30px;
+}
+.menu .image1{
+    float: left;
+    width:41vh;
+    height: auto;
+}
+.menu .image2{
+    float: right;
+    width:80vh;
+    padding-right: 0;
+}
+#camera{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;
+}
+.product1 h3{
+    margin-top: 20%;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-left: 60vh;
+    margin-right: 15vh;
+    float: right;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.description p{
+    margin-top: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 60vh;
+    margin-right: 15vh;
+    float: right;
+    display: block;
+    font-style: italic;
+    padding-right: 15%;
+}
+.camera1{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    float: left;
+    width: 50vh;
+    height: auto;
+}
+#smart-watches{
+    height: 700px;
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+.product2{
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+.product2 .watch1{
+    width: 40%;
+    height: auto;
+}
+.product2 h3{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: 25vh;
+    font-size: 40px;
+    text-align: center;
+}
+.product2 .watch2{
+    width: 40%;
+    height: auto
+}
+#mobile{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;
+}
+.product3{
+    margin-top: 10%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.product3 h3{
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 20vh;
+    margin-left: 10vh;
+    
+}
+.product3 img{
+    width: 50vh;
+    height: auto;
+}
+#quality{
+    height: 700px;
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+.last{
+    margin-top: 20%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+.last img{
+    width: 60%;
+    height: 60%;
+}
+.last p{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    color: black;
+    padding-left: 2%;
+}
+@media(max-width:768px){
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        position: fixed;
+        background: black;
+        opacity: 0.9;
+        overflow: hidden;
+        top: 0;
+        height: 12%;
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: space-between;
+        margin-left: -10%;
+    }
+    li{   
+        float: left;
+        padding-top: 25px;
+    }
+    a{
+       padding: 50px;
+       width: 100px;
+       text-decoration: none;
+       font-size: 20px;
+       font-family: 'Acme', sans-serif;
+       color: white;
+    }
+    nav a:hover{
+        text-transform: uppercase;
+    }
+    #home{
+        height: 700px;
+        background: white;
+        display: inline-block;
+        width: 100%;
+    }
+    .menu{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        padding-top: 5vh;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+    }
+    .banner h1{
+        font-family: 'Acme', sans-serif;
+        font-size: 70px;
+        border-bottom: 1px solid grey;
+    }
+    .banner p{
+        font-family: 'Acme', sans-serif;
+        font-size: 25px;
+        
+        margin-left: 22vh;
+        margin-right: 60vh;
+    }
+    .menu img{
+        width: 210px;
+        height: auto;
+        float: left;
+        padding: 10px 0px 0px 30px;
+    }
+    .menu .image1{
+        float: left;
+        width: 41vh;
+        height: auto;
+        padding-top: 0;
+    }
+    .menu .image2{
+        float: right;
+        width:80vh;
+        padding-right: 0;
+    }
+    #camera{
+        height: 700px;
+        background: black;
+        display: inline-block;
+        width: 100%;
+    }
+    .product1 h3{
+        margin-top: 20%;
+        font-family: 'Acme', sans-serif;
+        font-size: 40px;
+        color: white;
+        margin-left: 60vh;
+        margin-right: 15vh;
+        float: right;
+        display: block;
+        border-bottom: 1px solid white;
+    }
+    .description p{
+        margin-top: 0;
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-left: 60vh;
+        margin-right: 15vh;
+        float: right;
+        display: block;
+        font-style: italic;
+        padding-right: 15%;
+    }
+    .camera1{
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        float: left;
+        width: 0vh;
+        height: auto;
+    }
+    #smart-watches{
+        height: 700px;
+        background: white;
+        display: inline-block;
+        width: 100%;
+    }
+    .product2{
+        margin-top: 10%;
+        margin-left: 0;
+        margin-right: 15vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .product2 .watch1{
+        width: 70%;
+        height: auto;
+        padding-left: 20%;
+    }
+    .product2 h3{
+        font-family: 'Acme', sans-serif;
+        font-size: 20px;
+        color: black;
+        margin-top: 15vh;
+        font-size: 40px;
+        text-align: center;
+    }
+    .product2 .watch2{
+        width: 70%;
+        height: auto;
+    }
+    #mobile{
+        height: 700px;
+        background: black;
+        display: inline-block;
+        width: 100%;
+    }
+    .product3{
+        margin-top: 10%;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .product3 h3{
+        font-family: 'Acme', sans-serif;
+        font-size: 40px;
+        color: white;
+        margin-top: 20vh;
+        margin-left: 10vh;
+        
+    }
+    .product3 img{
+        width: 50vh;
+        height: auto;
+    }
+    #quality{
+        height: 700px;
+        background: white;
+        display: inline-block;
+        width: 100%;
+    }
+    .last{
+        margin-top: 20%;
+        margin-left: 7%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .last img{
+        width: 50%;
+        height: 60%;
+    }
+    .last p{
+        font-family: 'Acme', sans-serif;
+        font-size: 30px;
+        color: black;
+        padding-left: 2%;
+    }
+}
