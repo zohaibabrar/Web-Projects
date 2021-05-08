@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "HP Simplified";
+  background-color: black;
+}
+
+nav {
+  background-color: black;
+}
+
+nav img {
+  width: 15%;
+  height: auto;
+}
+
+nav a {
+  font-family: "HP Simplified";
+  font-weight: bolder;
+  letter-spacing: 15;
+  color: white;
+}
+
+.base {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.base ol {
+  top: 600px;
+}
+
+.base h1, .base p {
+  color: white;
+}
+
+.base img {
+  width: 50%;
+  height: auto;
+}
+
+.base button:hover {
+  background-color: red;
+  color: white;
+}
+
+.rider {
+  width: 40%;
+  height: 50%;
+  float: right;
+}
+
+.rider img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+
+.gallery {
+  padding-top: 5%;
+}
+
+#quality svg {
+  width: 70%;
+  height: auto;
+}
+
+#quality p {
+  padding-top: 20%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#contact {
+  padding-top: 5%;
+}
+
+#contact span {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery .carousel-inner {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
