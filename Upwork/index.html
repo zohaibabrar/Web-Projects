@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/942b456c95.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <style>
+      
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+  overflow-x: hidden;
+}
+
+.for_display{
+  display: none;
+}
+
+
+/*------- new try start */
+.dropdow-content {
+  margin-top: 23px;
+  margin-left: 17%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 777px;
+  height: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 0;
+  z-index: 1;
+}
+
+
+.nav-item:hover .dropdow-content {
+  display: block;
+}
+
+
+.underline-bottom{
+  border-bottom: 1px solid black;
+  width: 180px;
+}
+
+.dropdow-content h6{
+  font-weight: bold;
+ }
+
+.dropdow-content a{
+ color: black;
+}
+
+/*----- new dropdown menu end */
+
+.drop_text{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+
+
+
+.nav-item{
+  /* font-weight: bold; */
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0px 25px;
+  /* padding: 20px 0px; */
+}
+
+
+.nav_link{
+  color: black !important;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+
+
+.navbar_btn{
+  background-color: #3432EE;
+  padding: 12px 50px;
+  border-radius: 10px;
+}
+
+
+
+
+ @media (max-width: 767px) { 
+  .dropdow-content {
+    margin-top: 0px;
+    margin-left: 0%;
+    width: auto;
+   
+  }
+
+  .for_menu_scrolling{
+    overflow: scroll;
+  }
+ }
+
+ @media (max-width: 575px) { 
+  .navbar_btn {
+    display: block;
+    width: 100%;
+  }
+  }
+
+  @media (max-width: 500px) { 
+
+    .fixed-top{
+      position: initial;
+    }
+
+    .for_navbar{
+      background-color: white;
+    }
+
+    }
+
+
+ @media (min-width: 1200px) { 
+
+  /* navbar */
+
+  .navbar_btn{
+    transform: translateX(160px) !important;
+  }
+
+  .nav-item{
+    padding: 20px 0px;
+  }
+
+
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light for_navbar" id="main-nav">
+      <div class="container-fluid">
+       <a class="navbar-brand" href="./index.html">
+         <img src="./media/system-uicons_diamond.png" width="100" height="85" class="d-inline-block align-top" alt="">
+         <img src="media/SantiClinic.png" width="190" height="auto" class="pt-4" alt="" >
+       </a>
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <img src="./img/menu.png" width="26px" height="26px"  alt="" class="for_menu ">
+       </button>
+
+       <button class="navbar-toggler for_display" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <img src="./img/close.svg" width="26px" height="26px"  alt="" class="for_menu">
+       </button>
+
+
+<div class="collapse navbar-collapse" id="navbarNav">
+ 
+ <ul class="navbar-nav mx-auto">
+
+    <!-- maindecided start -->
+
+    <li class="nav-item ">   
+     <div class="dropdow">
+      <a class="btn btn-md dropdown-toggle pl-0 drop_text nav_link" 
+      href="./products.html">
+        Services
+      </a>
+        <div class="dropdow-content for_menu_scrolling">
+         
+         <div class="container-fluid">
+
+           <div class="d-flex flex-row flex-wrap mx-auto pt-4">  
+             
+             <div class="">
+                 <div class="d-flex flex-row">
+                   <div class="m-3" style="background-image: url(media/Ellipse\ 24.png);">
+                     <img src="./media/syringe.png" width="70" height="80"  alt="">
+                   </div>
+                   <div class="m-3">
+                     <h5>Therapy</h5>
+                     <p>consaltation of a therapist</p>
+                   </div>
+                 </div> 
+             </div>
+
+             <div class="">
+               <div class="d-flex flex-row">
+                 <div class="m-3" style="background-image: url(media/Ellipse\ 24\ \(1\).png);">
+                   <img src="./media/hello.png" width="80" height="80" alt="">
+                 </div>
+                 <div class="m-3">
+                   <h5>Dermathology</h5>
+                   <p>Treatement of skin diseases, <br> nails, hair and soolip</p>
+                 </div>
+               </div> 
+           </div>
+
+           <div class="">
+             <div class="d-flex flex-row">
+               <div class="m-3">
+                 <img src="./media/pen.png" width="80" height="80"  alt="" style="background-image: url(media/Ellipse\ 24\ \(5\).png);">
+               </div>
+               <div class="m-3">
+                 <h5>Therapy</h5>
+                 <p>consaltation of a therapist</p>
+               </div>
+             </div> 
+         </div>
+
+         <div class="">
+           <div class="d-flex flex-row">
+             <div class="m-3">
+               <img src="./media/checklist 1.png" width="80" height="80" alt="" style="background-image: url(media/Ellipse\ 24\ \(4\).png);">
+             </div>
+             <div class="m-3">
+               <h5>Dermathology</h5>
+               <p>Treatement of skin diseases, <br> nails, hair and soolip</p>
+             </div>
+           </div> 
+       </div>
+
+       <div class="">
+         <div class="d-flex flex-row">
+           <div class="m-3">
+             <img src="./media/call.png" width="80" height="80"  alt="" style="background-image: url(media/Ellipse\ 24\ \(2\).png.png);">
+           </div>
+           <div class="m-3">
+             <h5>Therapy</h5>
+             <p>consaltation of a therapist</p>
+           </div>
+         </div> 
+     </div>
+
+     <div class="">
+       <div class="d-flex flex-row">
+         <div class="m-3">
+           <img src="./media/headphones.png" width="80" height="80" alt="" style="background-image: url(media/Ellipse\ 24\ \(3\).png.png);">
+         </div>
+         <div class="m-3">
+           <h5>Dermathology</h5>
+           <p>Treatement of skin diseases, <br> nails, hair and soolip</p>
+         </div>
+       </div> 
+   </div>
+   
+       
+         </div> 
+        </div>
+          </li>
+
+
+   <li class="nav-item">
+     <a class="nav-link nav_link" href="#">Symptoms & Signs</a>
+   </li>
+
+   <li class="nav-item">
+     <a class="nav-link nav_link" href="#">Treatement</a>
+   </li>
+
+   <li class="nav-item">
+     <a class="nav-link nav_link" href="#">Shop</a>
+   </li>
+
+
+   <button class="btn btn-primary btn_block navbar_btn align-self-center my-3 my-md-0">
+     Talk to a Doctor
+   </button>
+ </ul>
+</div>
+   </div>
+    </nav>
+    <!-- BANNER -->
+    <div style="width: 100%; height: auto; background-color: #f0f1fd;padding-bottom: 5%;">
+      <div id="banner" class="pl-md-5 pr-md-5">
+        <section class="left">
+            <div class="trusted-doctor">
+                <span><i class="fa fa-check-circle" aria-hidden="true" style="float: left;"></i></span>
+                <p>Trusted doctor</p>
+            </div>
+            <div class="santi-clinic">
+              <p id="clinic">Santi Clinic</p>
+              <p class="discover">Discover and book amazing <span style="color:#3432EE">aesthetic </span>treatment in Portugal</p>
+            </div>
+          </section>
+        <aside class="right">
+          <div class="dentist-in-elipse" style="position: relative;">
+            <img src="media/dentist in circle.png" alt="">
+          </div>
+        </aside>    
+    </div>
+    <form class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button type="button" class="btn "><i class="fa fa-search" aria-hidden="true" style="font-size: 25px;"></i></button>
+            </div>
+            <input type="text" placeholder="Find Treatment" style="border: none; font-size: 20px; width: 35%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-right: 200px;" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button type="button" class="btn "><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 25px;"></i></button>
+            </div>
+            <input type="text" placeholder="Type a Location" style="border: none; font-size: 20px; width: 35%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-right: 100px;" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"><button type="button" class="btn" style="background-color: #3432EE;color: white;width: 100px;margin-left: 10%;">Search</button></div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="category">
+          <button type="button" class="btn btn-outline-primary" style="border-color: #707070; color: #707070;">Treatment</button>
+          <button type="button" class="btn btn-outline-primary" style="border-color: #707070; color: #707070;">Practitioner</button>
+          <button type="button" class="btn btn-outline-primary" style="border-color: #707070; color: #707070;">Clinic</button>
+        </div>
+        <div class="clear" style="padding-right: 5%;">
+          <a href="#">Clear All</a>
+        </div>
+      </div>
+      <!-- <table>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn "><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                <input type="text" placeholder="Find Treatment" style="border: none; font-size: 20px; width: 35%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-right: 100px;" class="form-control" aria-label="Text input with segmented dropdown button">
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+          </td>
+            <td><div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button type="button" class="btn "><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+              </div>
+              <input type="text" placeholder="Type a Location" style="border: none; font-size: 20px; width: 35%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-right: 100px;" class="form-control" aria-label="Text input with segmented dropdown button">
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+          </div>
+        </td>
+        <td>
+          <button type="button" class="btn" style="background-color: #3432EE;color: white;width: 100px;margin-left: 10%;">Search</button>
+        </td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn" style="background-color: #3432EE;color: white;width: 100px;margin-left: 10%;">Search</button></td>
+          <td><button type="button" class="btn" style="background-color: #3432EE;color: white;width: 100px;margin-left: 10%;">Search</button></td>
+          <td>are</td>
+          <td>you</td>
+        </tr>
+      </table> -->
+    </form>
+    </div>
+    <!-- BLOGS -->
+    <div id="blogs" style="margin-bottom: 2000px;">
+      <div class="elipse-left">
+        <img src="media/Path 7.png" alt="" style="width: 70%; height: auto;opacity: 0.5;">
+        <br>
+        <img src="media/Ellipse 9.png" alt="" style="width: 25%; height: auto;transform: translate(0px,-250px);">
+      </div>
+      <div class="cases">
+        <p><span style="color:#3432EE;">Most popular</span> aesthetics cases in Portugal based on the last 1000 researches</p>
+        <!-- <div class="row">
+          <div class="col-md-4 blog">
+            <div class="row">
+              <img src="media/Rectangle 28.png" alt="">
+            </div>
+            <div class="row justify-content-between mt-3">
+              <div class="date" style="display: flex;">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <h6>09 AUG 2021</h6>
+              </div>
+              <div class="author" style="display: flex;">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <h6>Salma Noussir</h6>
+              </div>
+            </div>
+            <div class="row">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Collection with gift on which until accounts.</p>
+            </div>
+            <div class="row">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4 blog">
+            <div class="row">
+              <img src="media/Rectangle 28 (1).png" alt="">
+            </div>
+            <div class="row justify-content-between mt-3">
+              <div class="date" style="display: flex;">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <h6>09 AUG 2021</h6>
+              </div>
+              <div class="author" style="display: flex;">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <h6>Salma Noussir</h6>
+              </div>
+            </div>
+            <div class="row">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Collection with gift on which until accounts.</p>
+            </div>
+            <div class="row">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4 blog">
+            <div class="row">
+              <img src="media/Rectangle 28 (2).png" alt="">
+            </div>
+            <div class="row justify-content-between mt-3">
+              <div class="date" style="display: flex;">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <h6>09 AUG 2021</h6>
+              </div>
+              <div class="author" style="display: flex;">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <h6>Salma Noussir</h6>
+              </div>
+            </div>
+            <div class="row">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Collection with gift on which until accounts.</p>
+            </div>
+            <div class="row">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="container text-center my-5" style="margin-top: 2000px;">
+          <!-- <div class="row justify-content-center"> -->
+            <div class="d-flex flex-row flex-wrap mx-auto justify-self-center">
+              <div class="m-4">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/Rectangle 28.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+    
+                    <div class="text-left">
+                    <i class="fa fa-calendar d-inline" aria-hidden="true"></i>
+                    <h5 class="card-title d-inline" style="font-size: 18px;">09 AUG 2021</h5>
+                  </div>
+    
+                  <div class="text-right" style="transform: translateY(-53px)">
+                      <i class="fa  fa-user-o d-inline" aria-hidden="true"></i>
+                      <h5 class="card-title d-inline" style="font-size: 18px;">Salman Noussir</h5>
+                    </div>
+                 
+                   
+                    <p class="card-text" style="font-size: 20px; font-weight: normal; text-align: left; line-height: 35px;">Lorem Ipsum is simply dummy text of printing and typesetting industry. Collection with gift on which until accounts</p>
+                    <a href="#" style="float: left;">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="m-4">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/Rectangle 28 (1).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+    
+                    <div class="text-left">
+                    <i class="fa fa-calendar d-inline" aria-hidden="true"></i>
+                    <h5 class="card-title d-inline" style="font-size: 18px;">09 AUG 2021</h5>
+                  </div>
+    
+                  <div class="text-right" style="transform: translateY(-53px)">
+                      <i class="fa  fa-user-o d-inline" aria-hidden="true"></i>
+                      <h5 class="card-title d-inline" style="font-size: 18px;">Salman Noussir</h5>
+                    </div>
+                 
+                   
+                    <p class="card-text" style="font-size: 20px; font-weight: normal; text-align: left; line-height: 35px;">Lorem Ipsum is simply dummy text of printing and typesetting industry. Collection with gift on which until accounts</p>
+                    <a href="#" style="float: left;">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="m-4">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/Rectangle 28 (2).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+    
+                    <div class="text-left">
+                    <i class="fa fa-calendar d-inline" aria-hidden="true"></i>
+                    <h5 class="card-title d-inline" style="font-size: 18px;">09 AUG 2021</h5>
+                  </div>
+    
+                  <div class="text-right" style="transform: translateY(-53px)">
+                      <i class="fa  fa-user-o d-inline" aria-hidden="true"></i>
+                      <h5 class="card-title d-inline" style="font-size: 18px;">Salman Noussir</h5>
+                    </div>
+                 
+                   
+                    <p class="card-text" style="font-size: 20px; font-weight: normal; text-align: left; line-height: 35px;">Lorem Ipsum is simply dummy text of printing and typesetting industry. Collection with gift on which until accounts</p>
+                    <a href="#" style="float: left;">Read More</a>
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="elipse-right">
+        <img src="media/Ellipse 6.png" alt="" style="width: 300px; height: auto;">
+        <br>
+        <img src="media/Ellipse 7.png" alt="" style="width: 100px;height: auto;float: right;transform: translate(0px,-400px);">
+      </div>
+    </div>
+
+
+    
+    
+
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- BOOTSTRAP: POPPER.MIN.JS & BOOTSTRAP.MIN.JS-->
+     <!-- <script
+     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+     crossorigin="anonymous"
+   ></script> -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+     crossorigin="anonymous"
+   ></script>
+    
+  
+  
+    <script>
+        $(".navbar-toggler").click(function () {
+          $(this).addClass("for_display").siblings().removeClass("for_display");
+        });
+
+   
+
+    </script>
+</body>
+</html>
